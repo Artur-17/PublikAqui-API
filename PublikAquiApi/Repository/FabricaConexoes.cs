@@ -16,7 +16,7 @@ namespace PublikAquiApi.Repository
 
         public FabricaConexoes()
         {
-            StringConexao = "Server=127.0.0.1;Port=5433;Database=PublikAqui;User Id=postgres;Password=123;";
+            StringConexao = "Server=127.0.0.1;Port=5433;Database=publikaqui;User Id=postgres;Password=123;";
         }
 
         public NpgsqlConnection ObterConexao()
