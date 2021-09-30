@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "miw+u88okEheCalf1FQ4akawUo0/ymTdE9puC465YKFyRb3/xL/JkaQQfO2unz+cREBPVzbEjssrSyhRGGC/zg==",
+  "success": true,
+  "projectFilePath": "F:\\Aulas Oficina Angula C#\\PublikAqui\\PublikAqui-API\\PublikAquiApi\\PublikAquiApi\\PublikAquiApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Artur\\.nuget\\packages\\npgsql\\5.0.10\\npgsql.5.0.10.nupkg.sha512",
+    "C:\\Users\\Artur\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
