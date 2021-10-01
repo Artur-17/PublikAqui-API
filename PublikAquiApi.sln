@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublikAquiApi", "PublikAquiApi\PublikAquiApi.csproj", "{CABA7195-DCC9-40EE-A775-317C692F7CE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublikAquiApi", "PublikAquiApi\PublikAquiApi.csproj", "{DDF14ECB-84F8-4D4A-821B-F684393374B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CABA7195-DCC9-40EE-A775-317C692F7CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CABA7195-DCC9-40EE-A775-317C692F7CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CABA7195-DCC9-40EE-A775-317C692F7CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CABA7195-DCC9-40EE-A775-317C692F7CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF14ECB-84F8-4D4A-821B-F684393374B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF14ECB-84F8-4D4A-821B-F684393374B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF14ECB-84F8-4D4A-821B-F684393374B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF14ECB-84F8-4D4A-821B-F684393374B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1334C39A-74BA-4216-B288-BF03E4A12F24}
+		SolutionGuid = {3C720B6A-81BC-45CA-9C45-3159A35AFBEA}
 	EndGlobalSection
 EndGlobal

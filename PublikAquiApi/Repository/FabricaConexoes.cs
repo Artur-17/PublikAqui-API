@@ -7,9 +7,8 @@ using Npgsql;
 
 namespace PublikAquiApi.Repository
 {
-    public class FabricaConexoes : IDisposable
+    public class FabricaConexoes: IDisposable
     {
-
         private string StringConexao { get; set; }
 
         public NpgsqlConnection Conexao { get; set; }
@@ -35,7 +34,6 @@ namespace PublikAquiApi.Repository
             if ((Conexao == null) && (Conexao.State != ConnectionState.Closed))
                 Conexao.Close();
         }
-
 
     }
 }

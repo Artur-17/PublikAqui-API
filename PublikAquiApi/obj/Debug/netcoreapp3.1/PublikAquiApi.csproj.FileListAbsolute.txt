@@ -1,39 +1,23 @@
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.csproj.AssemblyReference.cache
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.GeneratedMSBuildEditorConfig.editorconfig
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.AssemblyInfoInputs.cache
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.AssemblyInfo.cs
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.csproj.CoreCompileInputs.cache
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.MvcApplicationPartsAssemblyInfo.cache
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.RazorAssemblyInfo.cache
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.RazorAssemblyInfo.cs
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\appsettings.json
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.exe
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.deps.json
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.runtimeconfig.json
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.runtimeconfig.dev.json
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.dll
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.pdb
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.Views.dll
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.Views.pdb
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\Npgsql.dll
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\staticwebassets\PublikAquiApi.StaticWebAssets.Manifest.cache
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\staticwebassets\PublikAquiApi.StaticWebAssets.xml
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\PublikAquiApi.styles.css
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.TagHelpers.input.cache
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.TagHelpers.output.cache
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.RazorCoreGenerate.cache
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.RazorTargetAssemblyInfo.cache
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.RazorTargetAssemblyInfo.cs
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.Views.pdb
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.csproj.CopyComplete
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.dll
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.pdb
-F:\Aulas Oficina Angula C#\PublikAqui\PublikAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.genruntimeconfig.cache
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\appsettings.json
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.exe
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.deps.json
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.runtimeconfig.json
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.runtimeconfig.dev.json
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.dll
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.pdb
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.AssemblyInfoInputs.cache
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.AssemblyInfo.cs
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.csproj.CoreCompileInputs.cache
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.MvcApplicationPartsAssemblyInfo.cache
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\staticwebassets\PublikAquiApi.StaticWebAssets.Manifest.cache
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\staticwebassets\PublikAquiApi.StaticWebAssets.xml
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\PublikAquiApi.styles.css
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.RazorTargetAssemblyInfo.cache
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.dll
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.pdb
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.genruntimeconfig.cache
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.csproj.AssemblyReference.cache
+C:\DSN\Projetos\PublicAqui-API\PublikAquiApi\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.csproj.CopyComplete
