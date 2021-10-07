@@ -11,8 +11,8 @@ namespace PublikAquiApi.Models
         public string Nome { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }
-        public int PlanoId { get; set; }
-        public DateTime DataCadastro { get; set; }
+        public int PostagensQuantidade { get; set; }
+        public DateTime Cadastro { get; set; }
         public bool Inativo { get; set; }
     }
 }

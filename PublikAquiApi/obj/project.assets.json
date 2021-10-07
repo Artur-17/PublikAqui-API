@@ -84,11 +84,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DSN\\Projetos\\PublicAqui-API\\PublikAquiApi\\PublikAquiApi\\PublikAquiApi.csproj",
+      "projectUniqueName": "C:\\DSN\\Projetos\\PublikAqui-API\\PublikAquiApi\\PublikAquiApi.csproj",
       "projectName": "PublikAquiApi",
-      "projectPath": "C:\\DSN\\Projetos\\PublicAqui-API\\PublikAquiApi\\PublikAquiApi\\PublikAquiApi.csproj",
+      "projectPath": "C:\\DSN\\Projetos\\PublikAqui-API\\PublikAquiApi\\PublikAquiApi.csproj",
       "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\DSN\\Projetos\\PublicAqui-API\\PublikAquiApi\\PublikAquiApi\\obj\\",
+      "outputPath": "C:\\DSN\\Projetos\\PublikAqui-API\\PublikAquiApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

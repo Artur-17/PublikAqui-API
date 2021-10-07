@@ -7,15 +7,15 @@ using Npgsql;
 
 namespace PublikAquiApi.Repository
 {
-    public class FabricaConexoes: IDisposable
+    public class ConexaoFactory: IDisposable
     {
         private string StringConexao { get; set; }
 
         public NpgsqlConnection Conexao { get; set; }
 
-        public FabricaConexoes()
+        public ConexaoFactory()
         {
-            StringConexao = "Server=127.0.0.1;Port=5433;Database=publikaqui;User Id=postgres;Password=123;";
+            StringConexao = "Server=127.0.0.1;Port=5432;Database=publikaqui;User Id=postgres;Password=123;";
         }
 
         public NpgsqlConnection ObterConexao()
