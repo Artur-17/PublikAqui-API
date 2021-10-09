@@ -24,8 +24,8 @@ namespace PublikAquiApi.Repository
         }
         public bool Inserir(ref Usuario usuario)
         {
-            var comando = "INSERT INTO publikaqui.usuario(nome, email, senha, postagens_qtd, cadastro, inativo) " +
-                "VALUES(@nome, @email, @senha, @postagens_qtd, @cadastro, @inativo) returning id, cadastro;";
+            var comando = "INSERT INTO publikaqui.usuario(nome, email, senha, postagens_qtd, Datacadastro, inativo) " +
+                "VALUES(@nome, @email, @senha, @postagens_qtd, @cadastro, @inativo) returning id, Datacadastro;";
             
             try
             {
@@ -34,7 +34,7 @@ namespace PublikAquiApi.Repository
                 command.Parameters.AddWithValue("email", usuario.Email);
                 command.Parameters.AddWithValue("senha", usuario.Senha);
                 command.Parameters.AddWithValue("postagens_qtd", usuario.PostagensQuantidade);
-                command.Parameters.AddWithValue("cadastro", DateTime.Now);
+                command.Parameters.AddWithValue("Datacadastro", DateTime.Now);
                 command.Parameters.AddWithValue("inativo", false);
 
                 using var reader = command.ExecuteReader();
@@ -42,7 +42,7 @@ namespace PublikAquiApi.Repository
                 if (reader.Read())
                 {
                     usuario.Id = Convert.ToInt32(reader["id"]);
-                    usuario.Cadastro = Convert.ToDateTime(reader["cadastro"]);
+                    usuario.DataCadastro = Convert.ToDateTime(reader["DataCadastro"]);
                 }
 
                 return (usuario.Id > 0);
