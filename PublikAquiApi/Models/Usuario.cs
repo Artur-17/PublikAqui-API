@@ -14,5 +14,6 @@ namespace PublikAquiApi.Models
         public int PostagensQuantidade { get; set; }
         public DateTime Cadastro { get; set; }
         public bool Inativo { get; set; }
+        public bool Deletado { get; set; }
     }
 }

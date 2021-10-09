@@ -41,7 +41,7 @@ namespace PublikAquiApi.Controllers
                     Resposta.Status = 500;
                     Resposta.Mensagem = "Não foi possível atualizar o cliente. Detalhes:" + repositorio.UltimoErro;
                 }
-            }                
+            }
             else
             {
                 if (repositorio.Inserir(usuario))
@@ -54,7 +54,43 @@ namespace PublikAquiApi.Controllers
                     Resposta.Status = 500;
                     Resposta.Mensagem = "Não foi possível inserir o cliente. Detalhes:" + repositorio.UltimoErro;
                 }
-            }          
+            }
+
+            return Resposta;
+        }
+
+        [HttpDelete, Route("Deletar")]
+        public RespostaWeb Deletar([FromBody] Usuario usuario)
+        {
+            var Resposta = new RespostaWeb();
+
+            using var repositorio = new UsuarioRepository();
+            if (repositorio.UsuarioExiste(usuario))
+            {
+                if (repositorio.Deletar(usuario))
+                {
+                    Resposta.Status = 200;
+                    Resposta.Mensagem = "Cliente Deletado com sucesso.";
+                }
+                else
+                {
+                    Resposta.Status = 500;
+                    Resposta.Mensagem = "Não foi possível Deletar o cliente. Detalhes:" + repositorio.UltimoErro;
+                }
+            }
+            else
+            {
+                if (repositorio.Inserir(usuario))
+                {
+                    Resposta.Status = 200;
+                    Resposta.Mensagem = "Cliente Deletado com sucesso.";
+                }
+                else
+                {
+                    Resposta.Status = 500;
+                    Resposta.Mensagem = "Não foi possível Deletar o cliente. Detalhes:" + repositorio.UltimoErro;
+                }
+            }
 
             return Resposta;
         }

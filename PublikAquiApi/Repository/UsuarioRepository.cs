@@ -106,6 +106,34 @@ namespace PublikAquiApi.Repository
             }
         }
 
+        public bool Deletar(Usuario usuario)
+        {
+            var usuarioTemp = usuario;
+            return Deletar(ref usuarioTemp);
+        }
+
+        public bool Deletar(ref Usuario usuario)
+        {
+            var comando = "UPDATE publikaqui.usuario SET " +
+                        "deletado = @deletado" +
+                        "WHERE id = @id";
+            try
+            {
+                using var command = new NpgsqlCommand(comando, fabrica.ObterConexao());
+                command.Parameters.AddWithValue("id", usuario.Id);
+                command.Parameters.AddWithValue("id", usuario.Deletado);
+               
+                using var reader = command.ExecuteReader();
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                UltimoErro = e;
+                return false;
+            }
+        }
+
         public void Dispose()
         {
             fabrica.Dispose();
