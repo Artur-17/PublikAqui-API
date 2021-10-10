@@ -78,19 +78,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Artur\\.nuget\\packages\\": {}
+    "C:\\Users\\Gabriel\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Aulas Oficina Angula C#\\PublikAqui 2.0\\Api\\PublikAqui-API\\PublikAquiApi\\PublikAquiApi.csproj",
+      "projectUniqueName": "C:\\DSN\\Projetos\\PublikAquiAPI\\PublikAquiApi\\PublikAquiApi.csproj",
       "projectName": "PublikAquiApi",
-      "projectPath": "F:\\Aulas Oficina Angula C#\\PublikAqui 2.0\\Api\\PublikAqui-API\\PublikAquiApi\\PublikAquiApi.csproj",
-      "packagesPath": "C:\\Users\\Artur\\.nuget\\packages\\",
-      "outputPath": "F:\\Aulas Oficina Angula C#\\PublikAqui 2.0\\Api\\PublikAqui-API\\PublikAquiApi\\obj\\",
+      "projectPath": "C:\\DSN\\Projetos\\PublikAquiAPI\\PublikAquiApi\\PublikAquiApi.csproj",
+      "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+      "outputPath": "C:\\DSN\\Projetos\\PublikAquiAPI\\PublikAquiApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Artur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -17,6 +17,34 @@ namespace PublikAquiApi.Repository
             fabrica = new ConexaoFactory();
         }
 
+        public List<Usuario> Carregar()
+        {
+            var usuarioLista = new List<Usuario>();
+            var comando = "SELECT * FROM publikaqui.usuario WHERE not deletado AND not inativo";
+
+            using var command = new NpgsqlCommand(comando, fabrica.ObterConexao());
+
+            using var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                var usuario = new Usuario
+                {
+                    Id = Convert.ToInt32(reader["id"]),
+                    Nome = Convert.ToString(reader["nome"]),
+                    Email = Convert.ToString(reader["email"]),
+                    Senha = Convert.ToString(reader["senha"]), //será?
+                    PostagensQuantidade = Convert.ToInt32(reader["postagens_qtd"]),
+                    DataCadastro = Convert.ToDateTime(reader["Datacadastro"]),
+                    Inativo = Convert.ToBoolean(reader["inativo"]),
+                    Deletado = Convert.ToBoolean(reader["deletado"])
+                };
+
+                usuarioLista.Add(usuario);
+            }
+
+
+            return usuarioLista;
+        }
         public bool Inserir(Usuario usuario)
         {
             var usuarioTemp = usuario;

@@ -18,10 +18,11 @@ namespace PublikAquiApi.Controllers
 
         }
 
-        [HttpGet]
-        public Usuario Get()
+        [HttpGet, Route("Obter")]
+        public List<Usuario> Obter()
         {
-            return new Usuario();
+            using var repositorio = new UsuarioRepository();
+            return repositorio.Obter;
         }
 
         [HttpPost, Route("CadastrarOuAtualizar")]
@@ -30,28 +31,28 @@ namespace PublikAquiApi.Controllers
             var Resposta = new RespostaWeb();
 
             using var repositorio = new UsuarioRepository();
-            if (repositorio.UsuarioExiste(usuario))
+            if ((usuario.Id > 0) && (repositorio.UsuarioExiste(usuario)))
             {
                 if (repositorio.Atualizar(usuario)) {
-                    Resposta.Status = 200;
+                    Resposta.Sucesso = true;
                     Resposta.Mensagem = "Cliente atualizado com sucesso.";
                 }
                 else
                 {
-                    Resposta.Status = 500;
+                    Resposta.Sucesso = false;
                     Resposta.Mensagem = "Não foi possível atualizar o cliente. Detalhes:" + repositorio.UltimoErro;
                 }
             }
             else
             {
-                if (repositorio.Inserir(usuario))
+                if (repositorio.Inserir(ref usuario))
                 {
-                    Resposta.Status = 200;
+                    Resposta.Sucesso = true;
                     Resposta.Mensagem = "Cliente inserido com sucesso.";
                 }
                 else
                 {
-                    Resposta.Status = 500;
+                    Resposta.Sucesso = false;
                     Resposta.Mensagem = "Não foi possível inserir o cliente. Detalhes:" + repositorio.UltimoErro;
                 }
             }
@@ -65,31 +66,16 @@ namespace PublikAquiApi.Controllers
             var Resposta = new RespostaWeb();
 
             using var repositorio = new UsuarioRepository();
-            if (repositorio.UsuarioExiste(usuario))
+
+            if (repositorio.Deletar(usuario))
             {
-                if (repositorio.Deletar(usuario))
-                {
-                    Resposta.Status = 200;
-                    Resposta.Mensagem = "Cliente Deletado com sucesso.";
-                }
-                else
-                {
-                    Resposta.Status = 500;
-                    Resposta.Mensagem = "Não foi possível Deletar o cliente. Detalhes:" + repositorio.UltimoErro;
-                }
+                Resposta.Sucesso = true;
+                Resposta.Mensagem = "Cliente Deletado com sucesso.";
             }
             else
             {
-                if (repositorio.Inserir(usuario))
-                {
-                    Resposta.Status = 200;
-                    Resposta.Mensagem = "Cliente Deletado com sucesso.";
-                }
-                else
-                {
-                    Resposta.Status = 500;
-                    Resposta.Mensagem = "Não foi possível Deletar o cliente. Detalhes:" + repositorio.UltimoErro;
-                }
+                Resposta.Sucesso = false;
+                Resposta.Mensagem = "Não foi possível Deletar o cliente. Detalhes:" + repositorio.UltimoErro;
             }
 
             return Resposta;

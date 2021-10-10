@@ -67,3 +67,26 @@ F:\Aulas Oficina Angula C#\PublikAqui 2.0\Api\PublikAqui-API\PublikAquiApi\obj\D
 F:\Aulas Oficina Angula C#\PublikAqui 2.0\Api\PublikAqui-API\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.RazorTargetAssemblyInfo.cache
 F:\Aulas Oficina Angula C#\PublikAqui 2.0\Api\PublikAqui-API\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.csproj.CopyComplete
 F:\Aulas Oficina Angula C#\PublikAqui 2.0\Api\PublikAqui-API\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.genruntimeconfig.cache
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.csproj.AssemblyReference.cache
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.AssemblyInfoInputs.cache
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.AssemblyInfo.cs
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.csproj.CoreCompileInputs.cache
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.MvcApplicationPartsAssemblyInfo.cache
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.dll
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.pdb
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\bin\Debug\netcoreapp3.1\appsettings.json
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.exe
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.deps.json
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.runtimeconfig.json
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.runtimeconfig.dev.json
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.dll
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\bin\Debug\netcoreapp3.1\PublikAquiApi.pdb
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\staticwebassets\PublikAquiApi.StaticWebAssets.Manifest.cache
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\staticwebassets\PublikAquiApi.StaticWebAssets.xml
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\PublikAquiApi.styles.css
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.RazorTargetAssemblyInfo.cache
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.csproj.CopyComplete
+C:\DSN\Projetos\PublikAquiAPI\PublikAquiApi\obj\Debug\netcoreapp3.1\PublikAquiApi.genruntimeconfig.cache

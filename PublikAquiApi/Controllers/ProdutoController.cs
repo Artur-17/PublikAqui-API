@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PublikAquiApi.Controllers
 {
-    [Route("api/usuario")]
+    [Route("api/produto")]
     [ApiController]
     public class ProdutoController : ControllerBase
     {
@@ -25,34 +25,34 @@ namespace PublikAquiApi.Controllers
         }
 
         [HttpPost, Route("CadastrarOuAtualizar")]
-        public RespostaWeb CadastrarOuAtualizar([FromBody] Usuario usuario)
+        public RespostaWeb CadastrarOuAtualizar([FromBody] Produto produto)
         {
             var Resposta = new RespostaWeb();
 
-            using var repositorio = new UsuarioRepository();
-            if (repositorio.UsuarioExiste(usuario))
+            using var repositorio = new ProdutoRepository();
+            if ((produto.Id > 0) && (repositorio.ProdutoExiste(produto)))
             {
-                if (repositorio.Atualizar(usuario)) {
-                    Resposta.Status = 200;
-                    Resposta.Mensagem = "Cliente atualizado com sucesso.";
+                if (repositorio.Atualizar(produto)) {
+                    Resposta.Sucesso = true;
+                    Resposta.Mensagem = "Produto atualizado com sucesso.";
                 }
                 else
                 {
-                    Resposta.Status = 500;
-                    Resposta.Mensagem = "Não foi possível atualizar o cliente. Detalhes:" + repositorio.UltimoErro;
+                    Resposta.Sucesso = false;
+                    Resposta.Mensagem = "Não foi possível atualizar o produto. Detalhes:" + repositorio.UltimoErro;
                 }
             }
             else
             {
-                if (repositorio.Inserir(usuario))
+                if (repositorio.Inserir(ref produto))
                 {
-                    Resposta.Status = 200;
-                    Resposta.Mensagem = "Cliente inserido com sucesso.";
+                    Resposta.Sucesso = true;
+                    Resposta.Mensagem = "Produto inserido com sucesso.";
                 }
                 else
                 {
-                    Resposta.Status = 500;
-                    Resposta.Mensagem = "Não foi possível inserir o cliente. Detalhes:" + repositorio.UltimoErro;
+                    Resposta.Sucesso = false;
+                    Resposta.Mensagem = "Não foi possível inserir o produto. Detalhes:" + repositorio.UltimoErro;
                 }
             }
 
@@ -65,33 +65,17 @@ namespace PublikAquiApi.Controllers
             var Resposta = new RespostaWeb();
 
             using var repositorio = new UsuarioRepository();
-            if (repositorio.UsuarioExiste(usuario))
+            if (repositorio.Deletar(usuario))
             {
-                if (repositorio.Deletar(usuario))
-                {
-                    Resposta.Status = 200;
-                    Resposta.Mensagem = "Cliente Deletado com sucesso.";
-                }
-                else
-                {
-                    Resposta.Status = 500;
-                    Resposta.Mensagem = "Não foi possível Deletar o cliente. Detalhes:" + repositorio.UltimoErro;
-                }
+                Resposta.Sucesso = true;
+                Resposta.Mensagem = "Produto deletado com sucesso.";
             }
             else
             {
-                if (repositorio.Inserir(usuario))
-                {
-                    Resposta.Status = 200;
-                    Resposta.Mensagem = "Cliente Deletado com sucesso.";
-                }
-                else
-                {
-                    Resposta.Status = 500;
-                    Resposta.Mensagem = "Não foi possível Deletar o cliente. Detalhes:" + repositorio.UltimoErro;
-                }
+                Resposta.Sucesso = false;
+                Resposta.Mensagem = "Não foi possível deletar o produto. Detalhes:" + repositorio.UltimoErro;
             }
-
+   
             return Resposta;
         }
     }

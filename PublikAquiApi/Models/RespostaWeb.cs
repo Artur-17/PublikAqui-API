@@ -7,7 +7,7 @@ namespace PublikAquiApi.Models
 {
     public class RespostaWeb
     {
-        public int Status { get; set; }
+        public bool Sucesso { get; set; }
         public string Mensagem { get; set; }
     }
 }
