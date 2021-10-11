@@ -18,13 +18,14 @@ namespace PublikAquiApi.Controllers
 
         }
 
+        /*
         [HttpGet, Route("Obter")]
         public List<Usuario> Obter()
         {
             using var repositorio = new UsuarioRepository();
             return repositorio.Obter;
         }
-
+        */
         [HttpPost, Route("CadastrarOuAtualizar")]
         public RespostaWeb CadastrarOuAtualizar([FromBody] Usuario usuario)
         {

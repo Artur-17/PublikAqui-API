@@ -24,23 +24,24 @@ namespace PublikAquiApi.Repository
         }
         public bool Inserir(ref Produto produto)
         {
-            var comando = "INSERT INTO publikaqui.produto(Descricao, CategoriaNome, CategoriaID, PrecoCusto, PrecoVenda, PrecoPromocional, Foto,, Inativo, Deletado, Datacadastro ) " +
-                "VALUES(@Descricao, @CategoriaNome, @CategoriaID, @PrecoCusto, @PrecoVenda, @PrecoPromocional, @Foto) returning id, Datacadastro;";
+            var comando = "INSERT INTO publikaqui.produto(cod_barras,descricao, categoria_nome, id_categoria, preco_custo, preco_venda, preco_promocional, foto, inativo, deletado, data_cadastro ) " +
+                "VALUES(@cod_barras, @descricao, @categoria_nome, @id_categoria, @preco_custo, @preco_venda, @preco_promocional, @foto, @inativo, @deletado) returning id, data_cadastro;";
             
             try
             {
                 using var command = new NpgsqlCommand(comando, fabrica.ObterConexao());
-                command.Parameters.AddWithValue("ID", produto.Id);
+                command.Parameters.AddWithValue("id", produto.Id);
+                command.Parameters.AddWithValue("cod_barras", produto.CodigoBarras;
                 command.Parameters.AddWithValue("Descricao", produto.Descricao);
                 command.Parameters.AddWithValue("CategoriaNome", produto.CategoriaNome);
-                command.Parameters.AddWithValue("CategoriaID", produto.CategoriaID);
-                command.Parameters.AddWithValue("PrecoCusto", produto.PrecoCusto);
-                command.Parameters.AddWithValue("PrecoVenda", produto.PrecoVenda);
-                command.Parameters.AddWithValue("PrecoPromocional", produto.PrecoPromocional);
-                command.Parameters.AddWithValue("Foto", produto.Foto);
-                command.Parameters.AddWithValue("Inativo", false);
-                command.Parameters.AddWithValue("Deletado", false); 
-                command.Parameters.AddWithValue("DataCadastro", DateTime.Now);
+                command.Parameters.AddWithValue("id_categoria", produto.CategoriaID);
+                command.Parameters.AddWithValue("preco_custo", produto.PrecoCusto);
+                command.Parameters.AddWithValue("preco_venda", produto.PrecoVenda);
+                command.Parameters.AddWithValue("preco_promocional", produto.PrecoPromocional);
+                command.Parameters.AddWithValue("foto", produto.Foto);
+                command.Parameters.AddWithValue("inativo", false);
+                command.Parameters.AddWithValue("deletado", false); 
+                command.Parameters.AddWithValue("data_cadastro", DateTime.Now);
 
 
 
@@ -49,7 +50,7 @@ namespace PublikAquiApi.Repository
                 if (reader.Read())
                 {
                     produto.Id = Convert.ToInt32(reader["id"]);
-                    produto.DataCadastro = Convert.ToDateTime(reader["Datacadastro"]);
+                    produto.DataCadastro = Convert.ToDateTime(reader["data_cadastro"]);
                 }
 
                 return (produto.Id > 0);
@@ -88,15 +89,25 @@ namespace PublikAquiApi.Repository
         public bool Atualizar(ref Produto produto)
         {
             var comando = "UPDATE publikaqui.produto SET " +
-                "Descricao = @Descricao , CategoriaNome = @CategoriaNome, CategoriaID = @CategoriaID, PrecoCusto = @PrecoCusto, " +
-                "PrecoVenda = @PrecoVenda, PrecoPromocional = @PrecoPromocional, Foto = @Foto, Inativo = @Inativo, Deletado = @Deletado, Datacadastro = @Datacadastro " +
+                "cod_barras = @cod_barras ,descricao = @descricao, categoria_nome = @categoria_nome, id_categoria = @id_categoria, preco_custo = @preco_custo, preco_venda = @preco_venda, " +
+                "preco_promocional = @preco_promocional, foto = @foto, inativo = @inativo, deletado = @deletado, data_cadastro = @data_cadastro  " +
                 "WHERE id = @id";
 
             try
             {
                 using var command = new NpgsqlCommand(comando, fabrica.ObterConexao());
                 command.Parameters.AddWithValue("id", produto.Id);
-          
+                command.Parameters.AddWithValue("cod_barras", produto.CodigoBarras;
+                command.Parameters.AddWithValue("Descricao", produto.Descricao);
+                command.Parameters.AddWithValue("CategoriaNome", produto.CategoriaNome);
+                command.Parameters.AddWithValue("id_categoria", produto.CategoriaID);
+                command.Parameters.AddWithValue("preco_custo", produto.PrecoCusto);
+                command.Parameters.AddWithValue("preco_venda", produto.PrecoVenda);
+                command.Parameters.AddWithValue("preco_promocional", produto.PrecoPromocional);
+                command.Parameters.AddWithValue("foto", produto.Foto);
+                command.Parameters.AddWithValue("inativo", false);
+                command.Parameters.AddWithValue("deletado", false);
+                command.Parameters.AddWithValue("data_cadastro", DateTime.Now);
                 using var reader = command.ExecuteReader();
 
                 return true;
@@ -123,8 +134,9 @@ namespace PublikAquiApi.Repository
             {
                 using var command = new NpgsqlCommand(comando, fabrica.ObterConexao());
                 command.Parameters.AddWithValue("id", produto.Id);
-              
-               
+                command.Parameters.AddWithValue("deletado", produto.Deletado);
+
+
                 using var reader = command.ExecuteReader();
 
                 return true;
