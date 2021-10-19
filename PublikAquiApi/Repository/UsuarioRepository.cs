@@ -17,7 +17,7 @@ namespace PublikAquiApi.Repository
             fabrica = new ConexaoFactory();
         }
 
-        public List<Usuario> Carregar()
+        public List<Usuario> Listar()
         {
             var usuarioLista = new List<Usuario>();
             var comando = "SELECT * FROM publikaqui.usuario WHERE not deletado AND not inativo";
