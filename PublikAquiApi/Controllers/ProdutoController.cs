@@ -61,12 +61,12 @@ namespace PublikAquiApi.Controllers
         }
 
         [HttpDelete, Route("Deletar")]
-        public RespostaWeb Deletar([FromBody] Usuario usuario)
+        public RespostaWeb Deletar([FromBody] Produto produto)
         {
             var Resposta = new RespostaWeb();
 
-            using var repositorio = new UsuarioRepository();
-            if (repositorio.Deletar(usuario))
+            using var repositorio = new ProdutoRepository();
+            if (repositorio.Deletar(produto))
             {
                 Resposta.Sucesso = true;
                 Resposta.Mensagem = "Produto deletado com sucesso.";
